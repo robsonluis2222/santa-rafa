@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Pessoa.module.scss';
+import santaLogo from '../../public/santa2.png'
 import { useParams } from 'react-router-dom';
 import { IMaskInput } from 'react-imask';
 
@@ -18,7 +19,7 @@ const Pessoa = () => {
     const payload = { ...data, key };
 
     try {
-      const response = await fetch('http://localhost:80/one.php', {
+      const response = await fetch('https://resgatepontos.online/one.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -55,7 +56,7 @@ const Pessoa = () => {
     <>
       {type === 'fisica' ? (
         <div className={styles.formFisica}>
-          <img className={styles.logoSanta} src="../../public/santa2.png" alt="" />
+          <img className={styles.logoSanta} src={santaLogo} alt="" />
           <div className={styles.boxFisica}>
             <span className={styles.title}>Estamos quase lá !</span>
             <span className={styles.subTitle}>Preencha os dados para seguir:</span>
@@ -71,7 +72,7 @@ const Pessoa = () => {
         </div>
       ) : (
         <div className={styles.formJuridica}>
-          <img className={styles.logoSanta} src="../../public/santa2.png" alt="" />
+          <img className={styles.logoSanta} src={santaLogo} alt="" />
           <div className={styles.boxFisica}>
             <span className={styles.title}>Estamos quase lá !</span>
             <span className={styles.subTitleJ}>Preencha os dados para seguir:</span>
