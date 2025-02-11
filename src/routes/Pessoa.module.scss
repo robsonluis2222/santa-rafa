@@ -1,0 +1,81 @@
+.formFisica{
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .boxFisica{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+  }
+  .logoSanta{
+    margin-top: 40px;
+    width: 80%;
+  }
+}
+.formJuridica{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .boxFisica{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+  }
+  .logoSanta{
+    margin-top: 40px;
+    width: 80%;
+  }
+}
+.title{
+  color: white;
+  font-size: 30px;
+  margin-top: 80px;
+
+  margin-bottom: 10px;
+}
+.subTitle{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 120px;
+}
+.subTitleJ{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.labels{
+  margin-top: 10px;
+  color: white;
+}
+input{
+  width: 90%;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.botaoAcao{
+  margin-top: 20px;
+  color: white;
+  width: 90%;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #720101;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+  margin-bottom: 40px;
+}

@@ -1,0 +1,42 @@
+.finishContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  .logoSanta{
+    width: 80%;
+    margin-top: 40px;
+    margin-bottom: 80px;
+  }
+  .titulo{
+    width: 70%;
+    color: white;
+    font-size: 30px;
+  }
+  .subtitulo{
+    width: 80%;
+
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+i {
+  font-size: 80px;
+  color: rgb(52, 216, 52);
+  display: inline-block;
+  animation: fadeInScale 1s ease-out;
+}
